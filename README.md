@@ -92,22 +92,22 @@ Lambda expressions can simplify the creation of event handlers.
 
 Example creating an event handler using a lambda expression:
 
-csharp
-Copy code
+```csharp
 button.Click += (sender, e) => {
     // Handle button click
 };
+```
 4. Capture Variables
 Capturing Outer Variables
 Lambda expressions can capture variables from the outer scope in which they are defined. This allows you to use variables from the surrounding context within the lambda body.
 
 Example capturing an outer variable:
 
-csharp
-Copy code
+```csharp
 int factor = 5;
 Func<int, int> multiply = x => x * factor;
 int result = multiply(10); // result = 50
+```
 Closures
 When a lambda expression captures variables from the outer scope, it creates a closure, which "closes over" the captured variables. This means the lambda expression can still access and modify those variables, even if they go out of scope.
 
@@ -116,43 +116,36 @@ You can use lambda expressions to perform method group conversions. This is espe
 
 Example converting a method group to a delegate:
 
-csharp
-Copy code
+```csharp
 Func<int, int, int> add = (x, y) => AddNumbers(x, y);
+```
 6. Common Use Cases
 Sorting Lists
 Lambda expressions are commonly used to define custom sorting criteria for lists.
 
 Example sorting a list of strings alphabetically:
 
-csharp
-Copy code
+```csharp
 var names = new List<string> { "Alice", "Bob", "Charlie", "David" };
 var sortedNames = names.OrderBy(name => name);
+```
 Filtering Lists
 You can use lambda expressions to filter elements from a list based on a certain condition.
 
 Example filtering a list of numbers to get even numbers:
 
-csharp
-Copy code
+````csharp
 var numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 var evenNumbers = numbers.Where(num => num % 2 == 0);
+```
 Transforming Lists
 Lambda expressions can be used to transform the elements of a list.
 
 Example transforming a list of integers to their squares:
 
-csharp
-Copy code
+```csharp
 var numbers = new List<int> { 1, 2, 3, 4, 5 };
 var squares = numbers.Select(num => num * num);
-7. Best Practices
-Keep it Simple
-While lambda expressions are powerful, it's important to keep them simple and focused. Complex logic is better suited for named methods.
-
-Be Mindful of Captured Variables
-When using captured variables, be aware of the potential impact on memory usage and behavior, especially in long-lived scenarios.
-
+```
 8. Summary
 Lambda expressions in C# provide a concise and powerful way to create inline, anonymous methods. They are commonly used in LINQ queries, delegate creations, and event handlers. Understanding the syntax, capturing variables, and common use cases will help you leverage the full potential of lambda expressions in your C# code.
