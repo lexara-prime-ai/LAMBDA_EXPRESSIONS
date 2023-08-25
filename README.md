@@ -147,5 +147,6 @@ Example transforming a list of integers to their squares:
 var numbers = new List<int> { 1, 2, 3, 4, 5 };
 var squares = numbers.Select(num => num * num);
 ```
-8. Summary
+8. Summary:
+   
 Lambda expressions in C# provide a concise and powerful way to create inline, anonymous methods. They are commonly used in LINQ queries, delegate creations, and event handlers. Understanding the syntax, capturing variables, and common use cases will help you leverage the full potential of lambda expressions in your C# code.
