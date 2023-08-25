@@ -134,7 +134,7 @@ You can use lambda expressions to filter elements from a list based on a certain
 
 Example filtering a list of numbers to get even numbers:
 
-````csharp
+```csharp
 var numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 var evenNumbers = numbers.Where(num => num % 2 == 0);
 ```
