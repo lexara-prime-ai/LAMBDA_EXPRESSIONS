@@ -4,11 +4,11 @@
 **Lambda expressions** are a powerful feature in C# that allow you to create **inline, anonymous methods**. They are commonly used in **LINQ queries, event handlers**, and other scenarios where you need to pass a delegate or function as an argument. Let's dive into the in-depth documentation on **lambda expressions in C#**.
 
 **Table of Contents**
-    1.Introduction
-    2. Syntax
-    3.Usage
-    4.Common Use Cases
-    5.Summary
+* Introduction
+* Syntax
+* Usage
+* Common Use Cases
+* Summary
 
 **1. Introduction**
 What are Lambda Expressions?
